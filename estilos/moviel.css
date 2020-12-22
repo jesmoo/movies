@@ -14,7 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   display: grid;
-  grid-template-rows: 100px 50px auto;
+  grid-template-rows: 120px 70px auto;
   grid-template-areas: "header--container" "slide--left" "main--container";
 }
 /* maquetacion */
@@ -81,7 +81,7 @@ body {
   width: 250px;
   height: 30px;
   /* background-color: brown; */
-  border: 1px solid black;
+  border: 1px solid var(--pink);
   border-radius: 5px;
 }
 
@@ -135,7 +135,7 @@ body {
   display: block;
   width: 42px;
   height: 42px;
-  border: 2px solid black;
+  border: 2px solid var(--pink);
   border-radius: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,5 +214,57 @@ body {
 
 /* slide left */
 .slide--left {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-items: center; */
+  /* align-items: center; */
+}
+
+.slide--li {
+  padding: 10px;
+  background-color: var(--pink);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+
+/* .slide--lu { */
+/* display: flex; */
+/* flex-direction: r  ow; */
+/* align-content: center; */
+/* justify-content: center; */
+/* } */
+
+.icon {
+  margin: 0 auto;
+  display: block;
+  /* background-color: blue; */
+  width: 30px;
+  height: 30px;
+}
+
+.homeicon {
+  background-image: url("https://static.thenounproject.com/png/3654332-200.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tredinIcon {
+  background-image: url("https://static.thenounproject.com/png/1556771-200.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.likeIcon {
+  background-image: url("https://static.thenounproject.com/png/201300-200.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.settinIcon {
+  background-image: url("https://static.thenounproject.com/png/3135979-200.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
