@@ -31,7 +31,7 @@ body {
 
 .header--container {
   display: grid;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   /* grid-template: repeat(2, 1fr); */
@@ -66,11 +66,70 @@ body {
 .container--search {
   justify-self: center;
   align-self: center;
+  /* maquetacion */
   grid-row: 2 / 3;
   grid-column: 1 / -1;
 }
+.search--label {
+  padding: 8px;
+  display: flex;
+  width: 250px;
+  height: 30px;
+  /* background-color: brown; */
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.search--icon {
+  margin-right: 5px;
+  /* padding: 5px; */
+  justify-self: center;
+  align-self: center;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://static.thenounproject.com/png/3662624-200.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container--search .none {
+  width: 100%;
+  border-style: none;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 .container--user {
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 
+.user--name {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+ */
+.user--image {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.user--image img {
+  margin: 0 auto;
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
